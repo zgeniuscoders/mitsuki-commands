@@ -1,5 +1,7 @@
 {
     "name": "mitsuki/commands",
+    "description": "A powerful command-line interface library for the Mitsuki framework.",
+    "keywords": ["mitsuki", "cli", "commands", "console", "php"],
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -15,16 +17,17 @@
         }
     ],
     "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.2",
+        "symfony/console": "^7.0",
+        "mitsuki/contracts": "^1.0"
+    },
     "require-dev": {
-        "pestphp/pest": "^4.4"
+        "pestphp/pest": "^3.0"
     },
     "config": {
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
-    },
-    "require": {
-        "symfony/console": "^8.0",
-        "mitsuki/contracts": "^1.0"
     }
 }
